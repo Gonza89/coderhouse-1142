@@ -1,0 +1,21 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+.sec-services, .sec-services-pricing{
+  font-family: 'Open Sans', sans-serif;
+}
+.sec-footer{
+  background-color: #15354B;
+}
+.sec-nav-footer{
+  background-color: #081218;
+}
+#site-footer{
+  color: white;
+}
+#site-footer a{
+  color: white;
+}
+span{
+  color: blue;
+}
