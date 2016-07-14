@@ -7,65 +7,71 @@
 	<title>Pagina web</title>
 </head>
 <body>
-	<header id="encabezado">
-		<img src="assets/header-logo.png" />
+	<header id="site-header">
+		<section id="sec-logo">
+			<img src="assets/header-logo.png" alt="Logo" />
+		</section>
+		<section id="sec-nav">
 			<nav class="nav-header">
 				<a href="index.html"> HOME </a>
 				<a href="contact.html"> CONTACT </a>
 			</nav>
+		</section>
 	</header>
-	<div class="image-banner">
-		<img src="assets/indexbanner-bg3.jpg" />
+	<div class="banner">
+		<img src="assets/indexbanner-bg3.jpg" alt="Banner"/>
 	</div>
-	<form>
-		<input type="email" placeholder="enter your domain name and hit enter">
-		<input type="submit" value="Search">
-	</form>
+	<section class="sec-search-bar">
+		<form action="search.php" method="post">
+			<input type="email" placeholder="enter your domain name and hit enter">
+			<input type="submit" value="Search">
+		</form>
+	</section>
 	<section class="sec-services">
 		<div class="sec-service">
-			<div class="container">
+			<div class="service">
 				<img src="assets/icons/wid1.png">
 				<h4>subtitulo</h4>
 				<p>parrafo de texto</p>
 				<p>segunda linea de texto</p>
 			</div>
-			<div class="container">
+			<div class="service">
 				<img src="assets/icons/wid2.png">
 				<h4>subtitulo</h4>
 				<p>parrafo de texto</p>
 				<p>segunda linea de texto</p>
 			</div>
-			<div class="container">
+			<div class="service">
 				<img src="assets/icons/wid3.png">
 				<h4>subtitulo</h4>
 				<p>parrafo de texto</p>
 				<p>segunda linea de texto</p>
 			</div>
-			<div class="container">
+			<div class="service">
 				<img src="assets/icons/wid4.png">
 				<h4>subtitulo</h4>
 				<p>parrafo de texto</p>
 				<p>segunda linea de texto</p>
 			</div>
 		</div>
-		<div class="serv-hostro">
-			<h2>Celular</h2>
+		<div class="title-services">
+			<h3>Celular</h3>
 			<p>texto texto</p>
 		</div>
-		<div>
-			<div class="container">
+		<div class="features">
+			<div class="feature">
 				<img src="assets/icons/ser1.png">
 				<h4>subtitulo</h4>
 				<p>parrafo de texto</p>
 				<p>segunda linea de texto</p>
 			</div>
-			<div class="container">
+			<div class="feature">
 				<img src="assets/icons/ser2.png">
 				<h4>subtitulo</h4>
 				<p>parrafo de texto</p>
 				<p>segunda linea de texto</p>
 			</div>
-			<div class="container">
+			<div class="feature">
 				<img src="assets/icons/ser3.png">
 				<h4>subtitulo</h4>
 				<p>parrafo de texto</p>
@@ -75,20 +81,20 @@
 		<div class="phone-image">
 			<img src="assets/iphone2.png">
 		</div>
-		<div>
-			<div class="container">
+		<div class="features">
+			<div class="feature">
 				<img src="assets/icons/ser4.png">
 				<h4>subtitulo</h4>
 				<p>parrafo de texto</p>
 				<p>segunda linea de texto</p>
 			</div>
-			<div class="container">
+			<div class="feature">
 				<img src="assets/icons/ser5.png">
 				<h4>subtitulo</h4>
 				<p>parrafo de texto</p>
 				<p>segunda linea de texto</p>
 			</div>
-			<div class="container">
+			<div class="feature">
 				<img src="assets/icons/ser6.png">
 				<h4>subtitulo</h4>
 				<p>parrafo de texto</p>
@@ -96,13 +102,13 @@
 			</div>
 		</div>
 	</section>
-	<section class="serv-hostro">
+	<section class="image-price">
 		<img src="assets/pricing-bg.jpg" alt="">
 		<h2>Articulo subtitulo h2 </h2>
 		<p>texto texto </p>
 	</section>
 	<section class="sec-services-pricing">
-		<div class="container">
+		<div class="price">
 			<h4>texto h4</h4>
 			<h4>$50</h4>
 			<hr />
@@ -111,7 +117,7 @@
 			<p>texto</p>
 			<button> <a href="#">Solicitar</a> </button>
 		</div>
-		<div class="container">
+		<div class="price">
 			<h4>texto h4</h4>
 			<h4>$70</h4>
 			<hr />
@@ -120,7 +126,7 @@
 			<p>texto</p>
 			<button> <a href="#">Solicitar</a> </button>
 		</div>
-		<div class="container">
+		<div class="price">
 			<h4>texto h4</h4>
 			<h4>$90</h4>
 			<hr />
@@ -129,7 +135,7 @@
 			<p>texto</p>
 			<button> <a href="#">Solicitar</a> </button>
 		</div>
-		<div class="container">
+		<div class="price">
 			<h4>texto h4</h4>
 			<h4>$120</h4>
 			<hr />
@@ -139,7 +145,7 @@
 			<button> <a href="#">Solicitar</a> </button>
 		</div>
 	</section>
-	<footer id="pie">
+	<footer id="site-footer">
 		<section class="sec-footer">
 			<p>hosting use <span>500000</span> happy customers. want to see services?</p>
 		</section>
