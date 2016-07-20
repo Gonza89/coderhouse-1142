@@ -1,0 +1,72 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+.margin{
+  margin: auto;
+}
+
+.contenedor{
+  width: 60%
+}
+
+#sec-logo {
+    /*position: relative;*/
+    display: inline-block;
+    float: left;
+}
+#sec-nav {
+    /*position: relative;*/
+    display: inline-block;
+    float: right;
+    padding-top: 25px;
+    margin-left: auto;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#sec-nav .nav-header a{
+  font-size: 13px;
+  margin: 4px;
+
+}
+#site-header {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.banner img {
+    width: 100%;
+}
+.sec-search-bar {
+    width: 100%;
+    margin-top: -15px;
+
+}
+form{
+  display: flex;
+
+}
+input{
+  width: 100%;
+  flex: auto;
+}
+.sec-services, .sec-services-pricing {
+    font-family: 'Open Sans', sans-serif;
+}
+.sec-footer {
+    background-color: #15354B;
+}
+.sec-nav-footer {
+    background-color: #081218;
+}
+#site-footer {
+    color: white;
+}
+#site-footer a {
+    color: white;
+}
+span {
+    color: blue;
+}
