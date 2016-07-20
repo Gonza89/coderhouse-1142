@@ -7,7 +7,7 @@ body {
 }
 
 .contenedor{
-  width: 60%
+  width: 70%
 }
 
 #sec-logo {
@@ -41,16 +41,26 @@ a{
 }
 .sec-search-bar {
     width: 100%;
-    margin-top: -15px;
-
+    margin-top: -45px;
 }
 form{
-  display: flex;
+  height: 100%;
+  width: 100%;
+}
+input[type="email"]{
+  padding-left: 30px;
+  height: 80px;
+  margin: 0;
+  width: calc(100% - 239px);
+  font-family: 'Open Sans', sans-serif;
 
 }
-input{
-  width: 100%;
-  flex: auto;
+input[type=submit]{
+  width: 200px;
+  height: 80px;
+  background-color: #4a88f2;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
 }
 .sec-services, .sec-services-pricing {
     font-family: 'Open Sans', sans-serif;
