@@ -2,14 +2,12 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
 }
-.margin{
-  margin: auto;
+.margin {
+    margin: auto;
 }
-
-.contenedor{
-  width: 70%
+.contenedor {
+    width: 75%
 }
-
 #sec-logo {
     /*position: relative;*/
     display: inline-block;
@@ -22,15 +20,13 @@ body {
     padding-top: 25px;
     margin-left: auto;
 }
-a{
-  text-decoration: none;
-  cursor: pointer;
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
-
-#sec-nav .nav-header a{
-  font-size: 13px;
-  margin: 4px;
-
+#sec-nav .nav-header a {
+    font-size: 13px;
+    margin: 4px;
 }
 #site-header {
     padding-left: 25px;
@@ -43,27 +39,180 @@ a{
     width: 100%;
     margin-top: -45px;
 }
-form{
-  height: 100%;
-  width: 100%;
+form {
+    height: 100%;
+    width: 100%;
 }
-input[type="email"]{
-  padding-left: 30px;
-  height: 80px;
-  margin: 0;
-  width: calc(100% - 239px);
-  font-family: 'Open Sans', sans-serif;
-
+input[type="email"] {
+    padding-left: 30px;
+    height: 80px;
+    margin: 0;
+    width: calc(100% - 239px);
+    font-family: 'Open Sans', sans-serif;
 }
-input[type=submit]{
-  width: 200px;
-  height: 80px;
-  background-color: #4a88f2;
-  font-family: 'Open Sans', sans-serif;
-  cursor: pointer;
+input[type=submit] {
+    width: 200px;
+    height: 80px;
+    background-color: #4a88f2;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+.sec-service {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service {
+    text-align: center;
+}
+.title-services {
+    text-align: center;
+    margin-top: 40px;
+}
+.flex-features {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-features .features-left {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.flex-features .features-left .feature {
+    margin: 30px 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-features .features-left .feature .feature-text {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.flex-features .features-left .feature .feature-img {
+    text-align: right;
+    margin: 2px;
+    padding-bottom: 20px;
+}
+.flex-features .features-left .feature h5, p {
+    margin: 2px;
+}
+.flex-features .features-left .feature h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.phone-image {
+    margin: 5px;
+    z-index: 1;
+}
+.flex-features .features-right {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.flex-features .features-right .feature {
+    margin: 30px 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-features .features-right .feature .feature-text {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.flex-features .features-right .feature .feature-img {
+    text-align: left;
+    margin: 2px;
+    padding-bottom: 20px;
+}
+.flex-features .features-right .feature h5, p {
+    margin: 2px;
+}
+.flex-features .features-right .feature h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.sec-price {
+    position: relative;
+    margin-top: -80px;
+}
+.image-price {
+    width: 100%;
+}
+.image-price img {
+    width: 100%;
+}
+.title-price {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
 }
 .sec-services, .sec-services-pricing {
     font-family: 'Open Sans', sans-serif;
+}
+.sec-services-pricing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.price {
+    box-shadow: 0 0 1px 0 #343736;
+    padding-top: 70px;
+    padding-bottom: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 20px;
+    flex-basis: 130px;
+    text-align: justify;
+    /*  flex-grow: 1 1 100%;*/
+}
+.price-package {
+    margin-bottom: 50px;
+}
+.price h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.price h3 span {
+    font-size: 40px;
+    color: #000;
+}
+.caracteristicas {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.caracteristicas span {
+    color: #ee1717;
+}
+button{
+  background-color: #2d8fe0;
+  color: #ffffff;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-size: 11px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 2px 0 #343736;
 }
 .sec-footer {
     background-color: #15354B;
