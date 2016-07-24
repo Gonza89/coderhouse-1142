@@ -6,7 +6,7 @@ body {
     margin: auto;
 }
 .contenedor {
-    width: 75%
+    width: 80%
 }
 #sec-logo {
     /*position: relative;*/
@@ -167,52 +167,21 @@ input[type=submit] {
 .sec-services, .sec-services-pricing {
     font-family: 'Open Sans', sans-serif;
 }
-.sec-services-pricing {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+.sec-services-pricing{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
-.price {
-    box-shadow: 0 0 1px 0 #343736;
-    padding-top: 70px;
-    padding-bottom: 35px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin: 20px;
-    flex-basis: 130px;
-    text-align: justify;
-    /*  flex-grow: 1 1 100%;*/
-}
-.price-package {
-    margin-bottom: 50px;
-}
-.price h3 {
-    font-size: 14px;
-    text-transform: uppercase;
-    text-align: center;
-}
-.price h3 span {
-    font-size: 40px;
-    color: #000;
-}
-.caracteristicas {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.caracteristicas span {
-    color: #ee1717;
-}
-button{
-  background-color: #2d8fe0;
-  color: #ffffff;
-  padding: 10px 25px;
-  text-transform: uppercase;
-  font-size: 11px;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0 0 2px 0 #343736;
+.price{
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 0 0 0.5px #1f1b1b;
+  margin: 15px;
+  /*flex */
+  flex: auto;
 }
 .sec-footer {
     background-color: #15354B;
