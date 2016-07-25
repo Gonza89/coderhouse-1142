@@ -12,16 +12,11 @@ body {
     width: 80%
 }
 #sec-logo {
-    /*position: relative;*/
-    display: inline-block;
-    float: left;
+
 }
 #sec-nav {
-    /*position: relative;*/
-    display: inline-block;
-    float: right;
-    padding-top: 25px;
-    margin-left: auto;
+
+
 }
 a {
     text-decoration: none;
@@ -34,6 +29,10 @@ a {
 #site-header {
     padding-left: 25px;
     padding-right: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .banner img {
     width: 100%;
