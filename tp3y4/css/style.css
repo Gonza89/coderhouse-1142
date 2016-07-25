@@ -11,13 +11,6 @@ body {
 .contenedor {
     width: 80%
 }
-#sec-logo {
-
-}
-#sec-nav {
-
-
-}
 a {
     text-decoration: none;
     cursor: pointer;
@@ -34,7 +27,7 @@ a {
     align-items: center;
 
 }
-.banner img {
+.banner-img img{
     width: 100%;
 }
 .sec-search-bar {
@@ -249,6 +242,10 @@ sup {
 }
 .sec-nav-footer {
     background-color: #081218;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 #site-footer {
     color: white;
@@ -256,6 +253,13 @@ sup {
 #site-footer a {
     color: white;
 }
+.sec-nav-footer p{
+  font-size: 12px;
+}
+.sec-nav-footer #nav-footer a {
+  font-size: 14px;
+}
+
 span {
     color: blue;
 }
