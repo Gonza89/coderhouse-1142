@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -167,24 +170,83 @@ input[type=submit] {
 .sec-services, .sec-services-pricing {
     font-family: 'Open Sans', sans-serif;
 }
-.sec-services-pricing{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
+.sec-services-pricing {
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
 }
-.price{
-  padding-top: 15px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  box-shadow: 0 0 0.5px #1f1b1b;
-  margin: 15px;
-  /*flex */
-  flex: auto;
+.price {
+    background-color: #fff;
+    z-index: 2;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 0 0.5px #1f1b1b;
+    margin-top: -100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*flex */
+    flex-basis: 25%;
+}
+.contenedor .sec-services-pricing .price .name-package {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.contenedor .sec-services-pricing .price .package-price {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 1px solid #d4d0ca;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+sup {
+    font-size: 20px;
+}
+.contenedor .sec-services-pricing .price .table-price {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border-color: #ffffff;
+}
+.contenedor .sec-services-pricing .price .table-price tr td {
+    padding: 4px 10px;
+}
+.contenedor .sec-services-pricing .price button {
+    width: 100%;
+    height: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: none;
+    background-color: #099ad9;
+    box-shadow: 1px 1px 2px 0px rgb(0, 104, 179)
+}
+.contenedor .sec-services-pricing .price button a {
+    color: #fff;
 }
 .sec-footer {
+    margin-top: 70px;
+    height: 250px;
     background-color: #15354B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-footer p {
+    font-size: 25px;
 }
 .sec-nav-footer {
     background-color: #081218;
