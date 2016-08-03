@@ -1,56 +1,61 @@
-/* line 3, ../style.scss */
+/* line 3, style.scss */
 .flex-features .features-left .feature h5, .flex-features .features-left .feature p, .flex-features .features-right .feature h5, .flex-features .features-right .feature p {
   margin: 2px;
 }
 
-/* line 7, ../style.scss */
+/* line 7, style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 10, ../style.scss */
+/* line 10, style.scss */
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
 }
 
-/* line 14, ../style.scss */
-.margin {
-  margin: auto;
+/*.margin {
+    margin: auto;
 }
-
-/* line 17, ../style.scss */
 .contenedor {
-  width: 80%;
-}
-
-/* line 20, ../style.scss */
+    width: 80%;
+}*/
+/* line 20, style.scss */
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 26, ../style.scss */
+/* line 25, style.scss */
+#sec-nav .nav-header {
+  padding-top: 10px;
+}
+/* line 27, style.scss */
 #sec-nav .nav-header a {
   font-size: 0.8em;
   margin: 4px;
 }
 
-/* line 32, ../style.scss */
+/* line 33, style.scss */
+#sec-logo {
+  padding-bottom: 10px;
+}
+
+/* line 36, style.scss */
 #site-header {
   padding-left: 25px;
   padding-right: 25px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-/* line 40, ../style.scss */
+/* line 44, style.scss */
 .banner {
   position: relative;
 }
 
-/* line 44, ../style.scss */
+/* line 48, style.scss */
 .banner .text-img {
   color: #fff;
   position: absolute;
@@ -60,25 +65,25 @@ a {
   z-index: 10;
 }
 
-/* line 56, ../style.scss */
+/* line 60, style.scss */
 .banner .text-img p {
   font-size: 0.8em;
   padding-top: 15px;
 }
 
-/* line 65, ../style.scss */
+/* line 69, style.scss */
 .banner .banner-img img {
   width: 100%;
 }
 
-/* line 70, ../style.scss */
+/* line 74, style.scss */
 .sec-search-bar {
-  width: 100%;
+  /*width: 100%;*/
   margin-top: -45px;
   height: 80px;
 }
 
-/* line 75, ../style.scss */
+/* line 79, style.scss */
 form {
   position: relative;
   z-index: 10;
@@ -87,7 +92,7 @@ form {
   justify-content: center;
 }
 
-/* line 82, ../style.scss */
+/* line 86, style.scss */
 input[type="email"] {
   padding-left: 30px;
   margin: 0;
@@ -97,7 +102,7 @@ input[type="email"] {
   box-shadow: 0px 3px 6px 1px rgba(72, 97, 115, 0.49);
 }
 
-/* line 90, ../style.scss */
+/* line 94, style.scss */
 input[type=submit] {
   text-transform: uppercase;
   background-color: #4a88f2;
@@ -109,194 +114,233 @@ input[type=submit] {
   border: 0 none;
 }
 
-/* line 100, ../style.scss */
+/* line 104, style.scss */
 .sec-service {
   margin-top: 100px;
   margin-bottom: 100px;
-  display: flex;
+  /*display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between;*/
 }
 
-/* line 109, ../style.scss */
+/* line 113, style.scss */
 .service {
   text-align: center;
   text-transform: uppercase;
-  flex-basis: 25%;
+  /*flex-basis: 25%;*/
   padding: 10px 20px;
 }
-/* line 114, ../style.scss */
+/* line 118, style.scss */
 .service p {
   text-transform: none;
 }
 
-/* line 119, ../style.scss */
+/* line 123, style.scss */
 .title-services {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 50px;
 }
-/* line 123, ../style.scss */
+/* line 127, style.scss */
 .title-services h2 {
   font-size: 2em;
 }
-/* line 126, ../style.scss */
+/* line 130, style.scss */
 .title-services p {
   font-size: 1em;
 }
 
-/* line 132, ../style.scss */
+/* line 136, style.scss */
 .flex-features {
   margin: 10px 20px;
-  display: flex;
+  /*display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center;*/
 }
-/* line 138, ../style.scss */
+@media screen and (max-width: 991px) {
+  /* line 136, style.scss */
+  .flex-features {
+    margin: 0px -15px;
+  }
+}
+/* line 145, style.scss */
 .flex-features .features-left {
-  margin-right: 30px;
+  /*margin-right: 30px;*/
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
 }
-/* line 144, ../style.scss */
+/* line 151, style.scss */
 .flex-features .features-left .feature {
   margin: 30px 10px;
   padding: 5px;
   display: flex;
   flex-direction: row-reverse;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   justify-content: center;
 }
-/* line 151, ../style.scss */
+@media screen and (max-width: 991px) {
+  /* line 151, style.scss */
+  .flex-features .features-left .feature {
+    margin: 10px 10px;
+  }
+}
+/* line 161, style.scss */
 .flex-features .features-left .feature .feature-text {
   text-align: right;
   margin-top: 20px;
   margin-right: 10px;
 }
-/* line 156, ../style.scss */
+/* line 166, style.scss */
 .flex-features .features-left .feature h5 {
   font-size: 1em;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
-/* line 165, ../style.scss */
+/* line 172, style.scss */
+.flex-features .features-left .feature p {
+  font-size: 0.9em;
+}
+/* line 176, style.scss */
 .flex-features .features-left .feature .feature-img {
   text-align: right;
   margin: 2px;
   padding-bottom: 20px;
 }
-/* line 172, ../style.scss */
+/* line 183, style.scss */
 .flex-features .features-right {
-  margin-left: 30px;
+  /*margin-left: 30px;*/
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
 }
-/* line 178, ../style.scss */
+/* line 189, style.scss */
 .flex-features .features-right .feature {
   margin: 30px 10px;
   padding: 5px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   justify-content: center;
 }
-/* line 185, ../style.scss */
+@media screen and (max-width: 991px) {
+  /* line 189, style.scss */
+  .flex-features .features-right .feature {
+    margin: 10px 10px;
+  }
+}
+/* line 199, style.scss */
 .flex-features .features-right .feature .feature-text {
   text-align: left;
   margin-top: 20px;
   margin-left: 10px;
 }
-/* line 190, ../style.scss */
+/* line 204, style.scss */
 .flex-features .features-right .feature h5 {
   font-size: 1em;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
-/* line 199, ../style.scss */
+/* line 210, style.scss */
+.flex-features .features-right .feature p {
+  font-size: 0.9em;
+}
+/* line 214, style.scss */
 .flex-features .features-right .feature .feature-img {
   text-align: left;
   margin: 2px;
   padding-bottom: 20px;
 }
 
-/* line 208, ../style.scss */
+/* line 223, style.scss */
 .phone-image {
-  margin: 5px;
+  text-align: -webkit-center;
+  /*margin: 5px;*/
   z-index: 1;
 }
 
-/* line 214, ../style.scss */
+/* line 230, style.scss */
 .sec-price {
   position: relative;
   margin-top: -80px;
+  background: url("../assets/pricing-bg.jpg") no-repeat center;
+  background-size: 100% auto;
+  padding: 150px 0px 150px;
+}
+@media screen and (max-width: 991px) {
+  /* line 230, style.scss */
+  .sec-price {
+    margin-top: 0px;
+  }
 }
 
-/* line 218, ../style.scss */
+/* line 240, style.scss */
 .image-price {
-  width: 100%;
-}
-/* line 220, ../style.scss */
-.image-price img {
-  width: 100%;
-}
-
-/* line 224, ../style.scss */
-.title-price {
-  position: absolute;
-  top: 120px;
-  left: 0;
-  bottom: 0;
-  right: 0;
   text-align: center;
+  width: 100%;
+  /*img{
+    width: 100%;
+  }*/
 }
-/* line 231, ../style.scss */
-.title-price h2 {
+/* line 243, style.scss */
+.image-price h2 {
   font-size: 1.8em;
 }
 
-/* line 239, ../style.scss */
+/*.title-price {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    h2{
+      font-size: 1.8em;
+    }
+}*/
+/* line 265, style.scss */
 .sec-services {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 244, ../style.scss */
-.contenedor .sec-services-pricing {
+/* line 269, style.scss */
+.sec-services-pricing {
   height: 100%;
-  width: 100%;
+  width: 95%;
   font-family: "Raleway", sans-serif;
-  display: flex;
-  justify-content: center;
+  /*display: flex;*/
+  /*justify-content: center;*/
 }
-/* line 250, ../style.scss */
-.contenedor .sec-services-pricing .price {
+/* line 275, style.scss */
+.sec-services-pricing .price {
+  text-align: center;
   background-color: #fff;
   z-index: 2;
   height: auto;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-shadow: 0 0 0.5px #1f1b1b;
-  margin-top: -75px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 40px 20px 30px 20px;
+  box-shadow: 0 0 0.5px #b1aaaa;
+  margin: -75px 0px 0px 0px;
   /*flex */
-  flex-basis: 25%;
+  /*flex-basis: 25%;*/
 }
-/* line 264, ../style.scss */
-.contenedor .sec-services-pricing .price .name-package {
+@media screen and (max-width: 991px) {
+  /* line 275, style.scss */
+  .sec-services-pricing .price {
+    margin: 15px 0px;
+  }
+}
+/* line 288, style.scss */
+.sec-services-pricing .price .name-package {
   text-align: center;
   text-transform: uppercase;
   font-size: 1em;
 }
-/* line 269, ../style.scss */
-.contenedor .sec-services-pricing .price .package-price {
+/* line 293, style.scss */
+.sec-services-pricing .price .package-price {
   text-align: center;
   font-size: 3em;
   font-family: "Open Sans", sans-serif;
@@ -305,24 +349,23 @@ input[type=submit] {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 278, ../style.scss */
-.contenedor .sec-services-pricing .price .table-price {
+/* line 302, style.scss */
+.sec-services-pricing .price .table-price {
   width: 100%;
   padding: 8px 12px;
   font-size: 0.8em;
   margin-bottom: 20px;
   border-color: #ffffff;
 }
-/* line 285, ../style.scss */
-.contenedor .sec-services-pricing .price .table-price tr td {
+/* line 309, style.scss */
+.sec-services-pricing .price .table-price tr td {
   padding: 4px 10px;
 }
-/* line 290, ../style.scss */
-.contenedor .sec-services-pricing .price button {
-  width: 100%;
+/* line 314, style.scss */
+.sec-services-pricing .price a {
+  width: 85%;
   height: 35px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 10px 0;
   border-radius: 5px;
   text-decoration: none;
   text-transform: uppercase;
@@ -332,18 +375,15 @@ input[type=submit] {
   border: none;
   background-color: #099ad9;
   box-shadow: 1px 1px 1px 0px #0068b3;
-}
-/* line 304, ../style.scss */
-.contenedor .sec-services-pricing .price button a {
   color: #fff;
 }
 
-/* line 314, ../style.scss */
+/* line 333, style.scss */
 sup {
-  font-size: 0.7em;
+  font-size: 0.65em;
 }
 
-/* line 318, ../style.scss */
+/* line 337, style.scss */
 .sec-footer {
   margin-top: 70px;
   height: 250px;
@@ -352,12 +392,12 @@ sup {
   justify-content: center;
   align-items: center;
 }
-/* line 325, ../style.scss */
+/* line 344, style.scss */
 .sec-footer p {
   font-size: 1.5em;
 }
 
-/* line 330, ../style.scss */
+/* line 349, style.scss */
 .sec-nav-footer {
   background-color: #081218;
   height: 100px;
@@ -365,26 +405,33 @@ sup {
   justify-content: space-around;
   align-items: center;
 }
-/* line 336, ../style.scss */
+/* line 355, style.scss */
 .sec-nav-footer p {
   font-size: 0.75em;
 }
-/* line 340, ../style.scss */
+/* line 359, style.scss */
 .sec-nav-footer #nav-footer a {
   font-size: 0.8em;
   margin: 4px;
 }
+@media screen and (max-width: 991px) {
+  /* line 349, style.scss */
+  .sec-nav-footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
-/* line 346, ../style.scss */
+/* line 369, style.scss */
 #site-footer {
   color: white;
 }
-/* line 348, ../style.scss */
+/* line 371, style.scss */
 #site-footer a {
   color: white;
 }
 
-/* line 354, ../style.scss */
+/* line 377, style.scss */
 span {
   color: blue;
 }
