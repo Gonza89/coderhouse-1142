@@ -15,20 +15,26 @@ a {
   text-decoration: none;
   cursor: pointer; }
 
-#sec-nav{
-  .nav-header{
-    a {
-      font-size: 13px;
-      margin: 4px; }
+  #sec-nav {
+    .nav-header{
+      padding-top: 10px;
+      a {
+        font-size: 0.8em;
+        margin: 4px;
+    }
   }
-}
-#site-header {
-  padding-left: 25px;
-  padding-right: 25px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  }
+  #sec-logo{
+    padding-bottom: 10px;
+  }
+  #site-header {
+      padding-left: 25px;
+      padding-right: 25px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
 
+  }
 .banner {
   position: relative;
   .text-img {
@@ -40,6 +46,9 @@ a {
     z-index: 10;
     transform: translateX(-50%);
     text-align: center;
+    @media screen and (max-width: 991px) {
+      top: 10%;
+    }
     h2 {
       font-size: 35px;
     }
@@ -64,65 +73,70 @@ a {
 
 form {
   height: 300px;
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  .datos-contacto {
+  flex-wrap: wrap;*/
+  /*.datos-contacto {
     width: 50%;
-    padding: 0px 40px;
-    display: flex;
+    padding: 0px 40px;*/
+    /*display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    input[type=text]{
+    align-items: center;*/
+  input[type=text]{
       font-family: 'Raleway', sans-serif;
       width: 100%;
       border-radius: 2px;
       box-shadow: inset 0px 2px 6px -2px rgba(100, 116, 142, 0.4);
       border: 1px solid #e7e7e7;
       margin-top: 15px;
-      margin-bottom: 15px;
+      /*margin-bottom: 15px;*/
       padding: 10px 10px;
     }
-  }
-  .mensaje-contacto {
+
+  /*.mensaje-contacto {
     width: 50%;
     padding-top: 22px;
     padding-bottom: 22px;
     padding-right: 40px;
-    height: 75%;
-    textarea[type=text]{
-      font-family: 'Raleway', sans-serif;
-      width: 100%;
-      border-radius: 2px;
-      box-shadow: inset 0px 2px 6px -2px rgba(100, 116, 142, 0.4);
-      border: 1px solid #e7e7e7;
-      height: 100%;
-      padding: 10px 10px;
-    }
+    height: 75%;*/
+
+
+}
+textarea[type=text]{
+    margin-top: 15px;
+    height: 186px;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: inset 0px 2px 6px -2px rgba(100, 116, 142, 0.4);
+    border: 1px solid #e7e7e7;
+    padding: 10px 10px;
   }
+/*.enviar-contacto {
+  width: 15%;
+  margin: 0 auto;*/
+#boton{
+  text-align: center;
 }
 
-.enviar-contacto {
-  width: 15%;
-  margin: 0 auto;
-  input[type=submit] {
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 3px;
-    border: none;
-    cursor: pointer;
-    background-color: #099ad9;
-    box-shadow: 1px 1px 1px 0px #0068b3;
-    color: #fff;
-  }
+input[type=submit] {
+  width: 20%;
+  height: 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  border: none;
+  cursor: pointer;
+  background-color: #099ad9;
+  box-shadow: 1px 1px 1px 0px #0068b3;
+  color: #fff;
 }
+/*}*/
 .sec-footer {
   margin-top: 70px;
   height: 250px;

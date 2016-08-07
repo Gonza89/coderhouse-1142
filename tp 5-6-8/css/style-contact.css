@@ -20,13 +20,22 @@ a {
   cursor: pointer;
 }
 
-/* line 20, style-contact.scss */
+/* line 19, style-contact.scss */
+#sec-nav .nav-header {
+  padding-top: 10px;
+}
+/* line 21, style-contact.scss */
 #sec-nav .nav-header a {
-  font-size: 13px;
+  font-size: 0.8em;
   margin: 4px;
 }
 
-/* line 25, style-contact.scss */
+/* line 27, style-contact.scss */
+#sec-logo {
+  padding-bottom: 10px;
+}
+
+/* line 30, style-contact.scss */
 #site-header {
   padding-left: 25px;
   padding-right: 25px;
@@ -35,11 +44,11 @@ a {
   align-items: center;
 }
 
-/* line 32, style-contact.scss */
+/* line 38, style-contact.scss */
 .banner {
   position: relative;
 }
-/* line 34, style-contact.scss */
+/* line 40, style-contact.scss */
 .banner .text-img {
   color: #fff;
   position: absolute;
@@ -50,86 +59,93 @@ a {
   transform: translateX(-50%);
   text-align: center;
 }
-/* line 43, style-contact.scss */
+@media screen and (max-width: 991px) {
+  /* line 40, style-contact.scss */
+  .banner .text-img {
+    top: 10%;
+  }
+}
+/* line 52, style-contact.scss */
 .banner .text-img h2 {
   font-size: 35px;
 }
-/* line 46, style-contact.scss */
+/* line 55, style-contact.scss */
 .banner .text-img p {
   font-size: 12px;
   padding-top: 15px;
 }
-/* line 51, style-contact.scss */
+/* line 60, style-contact.scss */
 .banner .banner-img img {
   width: 100%;
 }
 
-/* line 56, style-contact.scss */
+/* line 65, style-contact.scss */
 #div-form {
   width: 85%;
   margin: 0 auto;
 }
-/* line 59, style-contact.scss */
+/* line 68, style-contact.scss */
 #div-form h3, #div-form p {
   text-align: center;
   margin-top: 50px;
 }
 
-/* line 65, style-contact.scss */
+/* line 74, style-contact.scss */
 form {
   height: 300px;
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-}
-/* line 71, style-contact.scss */
-form .datos-contacto {
-  width: 50%;
-  padding: 0px 40px;
-  display: flex;
+  flex-wrap: wrap;*/
+  /*.datos-contacto {
+    width: 50%;
+    padding: 0px 40px;*/
+  /*display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
+  /*.mensaje-contacto {
+    width: 50%;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 40px;
+    height: 75%;*/
 }
-/* line 78, style-contact.scss */
-form .datos-contacto input[type=text] {
+/* line 87, style-contact.scss */
+form input[type=text] {
   font-family: 'Raleway', sans-serif;
   width: 100%;
   border-radius: 2px;
   box-shadow: inset 0px 2px 6px -2px rgba(100, 116, 142, 0.4);
   border: 1px solid #e7e7e7;
   margin-top: 15px;
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
   padding: 10px 10px;
 }
-/* line 89, style-contact.scss */
-form .mensaje-contacto {
-  width: 50%;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  padding-right: 40px;
-  height: 75%;
-}
-/* line 95, style-contact.scss */
-form .mensaje-contacto textarea[type=text] {
+
+/* line 107, style-contact.scss */
+textarea[type=text] {
+  margin-top: 15px;
+  height: 186px;
   font-family: 'Raleway', sans-serif;
   width: 100%;
   border-radius: 2px;
   box-shadow: inset 0px 2px 6px -2px rgba(100, 116, 142, 0.4);
   border: 1px solid #e7e7e7;
-  height: 100%;
   padding: 10px 10px;
 }
 
-/* line 107, style-contact.scss */
-.enviar-contacto {
+/*.enviar-contacto {
   width: 15%;
-  margin: 0 auto;
+  margin: 0 auto;*/
+/* line 120, style-contact.scss */
+#boton {
+  text-align: center;
 }
-/* line 110, style-contact.scss */
-.enviar-contacto input[type=submit] {
-  width: 100%;
+
+/* line 124, style-contact.scss */
+input[type=submit] {
+  width: 20%;
   height: 40px;
   border-radius: 5px;
   text-decoration: none;
@@ -144,7 +160,8 @@ form .mensaje-contacto textarea[type=text] {
   color: #fff;
 }
 
-/* line 126, style-contact.scss */
+/*}*/
+/* line 140, style-contact.scss */
 .sec-footer {
   margin-top: 70px;
   height: 250px;
@@ -153,12 +170,12 @@ form .mensaje-contacto textarea[type=text] {
   justify-content: center;
   align-items: center;
 }
-/* line 133, style-contact.scss */
+/* line 147, style-contact.scss */
 .sec-footer p {
   font-size: 25px;
 }
 
-/* line 138, style-contact.scss */
+/* line 152, style-contact.scss */
 .sec-nav-footer {
   background-color: #081218;
   height: 100px;
@@ -166,26 +183,26 @@ form .mensaje-contacto textarea[type=text] {
   justify-content: space-around;
   align-items: center;
 }
-/* line 144, style-contact.scss */
+/* line 158, style-contact.scss */
 .sec-nav-footer p {
   font-size: 12px;
 }
-/* line 148, style-contact.scss */
+/* line 162, style-contact.scss */
 .sec-nav-footer #nav-footer a {
   font-size: 13px;
   margin: 4px;
 }
 
-/* line 155, style-contact.scss */
+/* line 169, style-contact.scss */
 #site-footer {
   color: white;
 }
-/* line 157, style-contact.scss */
+/* line 171, style-contact.scss */
 #site-footer a {
   color: white;
 }
 
-/* line 162, style-contact.scss */
+/* line 176, style-contact.scss */
 span {
   color: blue;
 }

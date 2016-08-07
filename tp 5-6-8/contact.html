@@ -3,6 +3,8 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" charset="utf-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" charset="utf-8">
     <link rel="stylesheet" href="css/style-contact.css" charset="utf-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum.scale=1.0">
@@ -10,7 +12,7 @@
 </head>
 
 <body>
-    <div class="contenedor margin">
+    <div>
         <header id="site-header">
             <section id="sec-logo">
                 <h1><img src="assets/header-logo.png" alt="Logo" /></h1>
@@ -39,7 +41,29 @@
         <h3>Get in Touch</h3>
         <p>Lorem ipsum dolor sit amet, consectetur.</p>
         <form action="datos_contacto.php" method="post">
-            <div class="datos-contacto">
+          <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+                  <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                </div>
+                <div class="form-group">
+                  <input type="text" name="asunto" id="asunto" placeholder="Asunto">              </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <textarea type="text" placeholder="Mensaje"></textarea>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+              <div id="boton" class="col-xs-12">
+                <input class="btn btn-primary" type="submit" value="enviar">
+              </div>
+          </div>
+            <!--<div class="datos-contacto">
 
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre">
                 <input type="text" name="apellido" id="apellido" placeholder="Apellido">
@@ -52,7 +76,7 @@
             <div class="enviar-contacto">
 
                 <input type="submit" value="enviar">
-            </div>
+            </div>-->
         </form>
     </div>
   </div>
