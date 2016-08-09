@@ -19,23 +19,27 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+/* line 17, style-contact.scss */
+a:hover {
+  font-weight: bold;
+}
 
-/* line 19, style-contact.scss */
+/* line 23, style-contact.scss */
 #sec-nav .nav-header {
   padding-top: 10px;
 }
-/* line 21, style-contact.scss */
+/* line 25, style-contact.scss */
 #sec-nav .nav-header a {
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin: 4px;
 }
 
-/* line 27, style-contact.scss */
+/* line 31, style-contact.scss */
 #sec-logo {
   padding-bottom: 10px;
 }
 
-/* line 30, style-contact.scss */
+/* line 34, style-contact.scss */
 #site-header {
   padding-left: 25px;
   padding-right: 25px;
@@ -43,12 +47,24 @@ a {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  /* line 34, style-contact.scss */
+  #site-header {
+    flex-direction: column;
+  }
+}
 
-/* line 38, style-contact.scss */
+/* line 45, style-contact.scss */
 .banner {
   position: relative;
 }
-/* line 40, style-contact.scss */
+@media screen and (max-width: 767px) {
+  /* line 45, style-contact.scss */
+  .banner {
+    display: none;
+  }
+}
+/* line 50, style-contact.scss */
 .banner .text-img {
   color: #fff;
   position: absolute;
@@ -60,37 +76,37 @@ a {
   text-align: center;
 }
 @media screen and (max-width: 991px) {
-  /* line 40, style-contact.scss */
+  /* line 50, style-contact.scss */
   .banner .text-img {
     top: 10%;
   }
 }
-/* line 52, style-contact.scss */
+/* line 62, style-contact.scss */
 .banner .text-img h2 {
   font-size: 35px;
 }
-/* line 55, style-contact.scss */
+/* line 65, style-contact.scss */
 .banner .text-img p {
   font-size: 12px;
   padding-top: 15px;
 }
-/* line 60, style-contact.scss */
+/* line 70, style-contact.scss */
 .banner .banner-img img {
   width: 100%;
 }
 
-/* line 65, style-contact.scss */
+/* line 75, style-contact.scss */
 #div-form {
   width: 85%;
   margin: 0 auto;
 }
-/* line 68, style-contact.scss */
+/* line 78, style-contact.scss */
 #div-form h3, #div-form p {
   text-align: center;
   margin-top: 50px;
 }
 
-/* line 74, style-contact.scss */
+/* line 84, style-contact.scss */
 form {
   height: 300px;
   /*display: flex;
@@ -111,7 +127,7 @@ form {
     padding-right: 40px;
     height: 75%;*/
 }
-/* line 87, style-contact.scss */
+/* line 97, style-contact.scss */
 form input[type=text] {
   font-family: 'Raleway', sans-serif;
   width: 100%;
@@ -123,7 +139,7 @@ form input[type=text] {
   padding: 10px 10px;
 }
 
-/* line 107, style-contact.scss */
+/* line 117, style-contact.scss */
 textarea[type=text] {
   margin-top: 15px;
   height: 186px;
@@ -138,12 +154,12 @@ textarea[type=text] {
 /*.enviar-contacto {
   width: 15%;
   margin: 0 auto;*/
-/* line 120, style-contact.scss */
+/* line 130, style-contact.scss */
 #boton {
   text-align: center;
 }
 
-/* line 124, style-contact.scss */
+/* line 134, style-contact.scss */
 input[type=submit] {
   width: 20%;
   height: 40px;
@@ -161,7 +177,7 @@ input[type=submit] {
 }
 
 /*}*/
-/* line 140, style-contact.scss */
+/* line 150, style-contact.scss */
 .sec-footer {
   margin-top: 70px;
   height: 250px;
@@ -170,12 +186,18 @@ input[type=submit] {
   justify-content: center;
   align-items: center;
 }
-/* line 147, style-contact.scss */
+@media screen and (max-width: 767px) {
+  /* line 150, style-contact.scss */
+  .sec-footer {
+    text-align: center;
+  }
+}
+/* line 160, style-contact.scss */
 .sec-footer p {
-  font-size: 25px;
+  font-size: 1.5em;
 }
 
-/* line 152, style-contact.scss */
+/* line 165, style-contact.scss */
 .sec-nav-footer {
   background-color: #081218;
   height: 100px;
@@ -183,26 +205,33 @@ input[type=submit] {
   justify-content: space-around;
   align-items: center;
 }
-/* line 158, style-contact.scss */
+/* line 171, style-contact.scss */
 .sec-nav-footer p {
-  font-size: 12px;
+  font-size: 0.75em;
 }
-/* line 162, style-contact.scss */
+/* line 175, style-contact.scss */
 .sec-nav-footer #nav-footer a {
-  font-size: 13px;
+  font-size: 0.8em;
   margin: 4px;
 }
+@media screen and (max-width: 991px) {
+  /* line 165, style-contact.scss */
+  .sec-nav-footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
-/* line 169, style-contact.scss */
+/* line 185, style-contact.scss */
 #site-footer {
   color: white;
 }
-/* line 171, style-contact.scss */
+/* line 187, style-contact.scss */
 #site-footer a {
   color: white;
 }
 
-/* line 176, style-contact.scss */
+/* line 193, style-contact.scss */
 span {
   color: blue;
 }

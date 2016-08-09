@@ -25,23 +25,27 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+/* line 23, style.scss */
+a:hover {
+  font-weight: bold;
+}
 
-/* line 25, style.scss */
+/* line 28, style.scss */
 #sec-nav .nav-header {
   padding-top: 10px;
 }
-/* line 27, style.scss */
+/* line 30, style.scss */
 #sec-nav .nav-header a {
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin: 4px;
 }
 
-/* line 33, style.scss */
+/* line 36, style.scss */
 #sec-logo {
   padding-bottom: 10px;
 }
 
-/* line 36, style.scss */
+/* line 39, style.scss */
 #site-header {
   padding-left: 25px;
   padding-right: 25px;
@@ -49,13 +53,25 @@ a {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  /* line 39, style.scss */
+  #site-header {
+    flex-direction: column;
+  }
+}
 
-/* line 44, style.scss */
+/* line 50, style.scss */
 .banner {
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  /* line 50, style.scss */
+  .banner {
+    display: none;
+  }
+}
 
-/* line 48, style.scss */
+/* line 57, style.scss */
 .banner .text-img {
   color: #fff;
   position: absolute;
@@ -65,24 +81,30 @@ a {
   z-index: 10;
 }
 
-/* line 60, style.scss */
+/* line 69, style.scss */
 .banner .text-img p {
   font-size: 0.8em;
   padding-top: 15px;
 }
 
-/* line 69, style.scss */
+/* line 78, style.scss */
 .banner .banner-img img {
   width: 100%;
 }
 
-/* line 74, style.scss */
+/* line 83, style.scss */
 .sec-search-bar {
   /*width: 100%;*/
   margin-top: -45px;
   height: 80px;
 }
-/* line 78, style.scss */
+@media screen and (max-width: 767px) {
+  /* line 83, style.scss */
+  .sec-search-bar {
+    margin-top: 30px;
+  }
+}
+/* line 90, style.scss */
 .sec-search-bar form {
   position: relative;
   z-index: 10;
@@ -90,7 +112,7 @@ a {
   display: flex;
   justify-content: center;
 }
-/* line 84, style.scss */
+/* line 96, style.scss */
 .sec-search-bar form input[type="email"] {
   padding-left: 30px;
   margin: 0;
@@ -99,7 +121,7 @@ a {
   flex-grow: 1;
   box-shadow: 0px 3px 6px 1px rgba(72, 97, 115, 0.49);
 }
-/* line 92, style.scss */
+/* line 104, style.scss */
 .sec-search-bar form input[type=submit] {
   letter-spacing: 3px;
   font-weight: 700;
@@ -111,9 +133,16 @@ a {
   flex-grow: 0;
   color: #fff;
   border: 0 none;
+  box-shadow: 0px 3px 6px 1px rgba(72, 97, 115, 0.49);
+}
+@media screen and (max-width: 499px) {
+  /* line 104, style.scss */
+  .sec-search-bar form input[type=submit] {
+    flex-basis: 0;
+  }
 }
 
-/* line 110, style.scss */
+/* line 126, style.scss */
 .sec-service {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -122,35 +151,47 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;*/
 }
+@media screen and (max-width: 767px) {
+  /* line 126, style.scss */
+  .sec-service {
+    margin-bottom: 50px;
+  }
+}
 
-/* line 119, style.scss */
+/* line 138, style.scss */
 .service {
   text-align: center;
   text-transform: uppercase;
   /*flex-basis: 25%;*/
   padding: 10px 20px;
 }
-/* line 124, style.scss */
+/* line 143, style.scss */
 .service p {
   text-transform: none;
 }
 
-/* line 129, style.scss */
+/* line 148, style.scss */
 .title-services {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 50px;
 }
-/* line 133, style.scss */
+@media screen and (max-width: 767px) {
+  /* line 148, style.scss */
+  .title-services {
+    margin-top: 50px;
+  }
+}
+/* line 155, style.scss */
 .title-services h2 {
   font-size: 2em;
 }
-/* line 136, style.scss */
+/* line 158, style.scss */
 .title-services p {
   font-size: 1em;
 }
 
-/* line 142, style.scss */
+/* line 164, style.scss */
 .flex-features {
   margin: 10px 20px;
   /*display: flex;
@@ -159,12 +200,12 @@ a {
   justify-content: center;*/
 }
 @media screen and (max-width: 991px) {
-  /* line 142, style.scss */
+  /* line 164, style.scss */
   .flex-features {
     margin: 0px -15px;
   }
 }
-/* line 151, style.scss */
+/* line 173, style.scss */
 .flex-features .features-left {
   /*margin-right: 30px;*/
   display: flex;
@@ -172,7 +213,13 @@ a {
   flex-wrap: wrap;
   align-content: flex-start;
 }
-/* line 157, style.scss */
+@media screen and (max-width: 767px) {
+  /* line 173, style.scss */
+  .flex-features .features-left {
+    margin-bottom: 30px;
+  }
+}
+/* line 182, style.scss */
 .flex-features .features-left .feature {
   margin: 30px 10px;
   padding: 5px;
@@ -182,34 +229,47 @@ a {
   justify-content: center;
 }
 @media screen and (max-width: 991px) {
-  /* line 157, style.scss */
+  /* line 182, style.scss */
   .flex-features .features-left .feature {
     margin: 10px 10px;
   }
 }
-/* line 167, style.scss */
+@media screen and (max-width: 767px) {
+  /* line 182, style.scss */
+  .flex-features .features-left .feature {
+    flex-direction: row;
+  }
+}
+/* line 195, style.scss */
 .flex-features .features-left .feature .feature-text {
   text-align: right;
   margin-top: 20px;
   margin-right: 10px;
 }
-/* line 172, style.scss */
+@media screen and (max-width: 767px) {
+  /* line 195, style.scss */
+  .flex-features .features-left .feature .feature-text {
+    text-align: left;
+    margin-left: 10px;
+  }
+}
+/* line 204, style.scss */
 .flex-features .features-left .feature h5 {
   font-size: 1em;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
-/* line 178, style.scss */
+/* line 210, style.scss */
 .flex-features .features-left .feature p {
   font-size: 0.9em;
 }
-/* line 182, style.scss */
+/* line 214, style.scss */
 .flex-features .features-left .feature .feature-img {
   text-align: right;
   margin: 2px;
   padding-bottom: 20px;
 }
-/* line 189, style.scss */
+/* line 221, style.scss */
 .flex-features .features-right {
   /*margin-left: 30px;*/
   display: flex;
@@ -217,7 +277,7 @@ a {
   flex-wrap: wrap;
   align-content: flex-start;
 }
-/* line 195, style.scss */
+/* line 227, style.scss */
 .flex-features .features-right .feature {
   margin: 30px 10px;
   padding: 5px;
@@ -227,42 +287,48 @@ a {
   justify-content: center;
 }
 @media screen and (max-width: 991px) {
-  /* line 195, style.scss */
+  /* line 227, style.scss */
   .flex-features .features-right .feature {
     margin: 10px 10px;
   }
 }
-/* line 205, style.scss */
+/* line 237, style.scss */
 .flex-features .features-right .feature .feature-text {
   text-align: left;
   margin-top: 20px;
   margin-left: 10px;
 }
-/* line 210, style.scss */
+/* line 242, style.scss */
 .flex-features .features-right .feature h5 {
   font-size: 1em;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
-/* line 216, style.scss */
+/* line 248, style.scss */
 .flex-features .features-right .feature p {
   font-size: 0.9em;
 }
-/* line 220, style.scss */
+/* line 252, style.scss */
 .flex-features .features-right .feature .feature-img {
   text-align: left;
   margin: 2px;
   padding-bottom: 20px;
 }
 
-/* line 229, style.scss */
+/* line 261, style.scss */
 .phone-image {
   text-align: -webkit-center;
   /*margin: 5px;*/
   z-index: 1;
 }
+@media screen and (max-width: 767px) {
+  /* line 261, style.scss */
+  .phone-image {
+    margin-bottom: 30px;
+  }
+}
 
-/* line 236, style.scss */
+/* line 271, style.scss */
 .sec-price {
   position: relative;
   margin-top: -80px;
@@ -271,13 +337,13 @@ a {
   padding: 150px 0px 150px;
 }
 @media screen and (max-width: 991px) {
-  /* line 236, style.scss */
+  /* line 271, style.scss */
   .sec-price {
     margin-top: 0px;
   }
 }
 
-/* line 246, style.scss */
+/* line 281, style.scss */
 .image-price {
   text-align: center;
   width: 100%;
@@ -285,7 +351,7 @@ a {
     width: 100%;
   }*/
 }
-/* line 249, style.scss */
+/* line 284, style.scss */
 .image-price h2 {
   font-size: 1.8em;
 }
@@ -301,12 +367,12 @@ a {
       font-size: 1.8em;
     }
 }*/
-/* line 271, style.scss */
+/* line 306, style.scss */
 .sec-services {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 275, style.scss */
+/* line 310, style.scss */
 .sec-services-pricing {
   height: 100%;
   width: 95%;
@@ -314,7 +380,7 @@ a {
   /*display: flex;*/
   /*justify-content: center;*/
 }
-/* line 281, style.scss */
+/* line 316, style.scss */
 .sec-services-pricing .price {
   text-align: center;
   background-color: #fff;
@@ -327,18 +393,18 @@ a {
   /*flex-basis: 25%;*/
 }
 @media screen and (max-width: 991px) {
-  /* line 281, style.scss */
+  /* line 316, style.scss */
   .sec-services-pricing .price {
     margin: 15px 0px;
   }
 }
-/* line 294, style.scss */
+/* line 329, style.scss */
 .sec-services-pricing .price .name-package {
   text-align: center;
   text-transform: uppercase;
   font-size: 1em;
 }
-/* line 299, style.scss */
+/* line 334, style.scss */
 .sec-services-pricing .price .package-price {
   text-align: center;
   font-size: 3em;
@@ -348,7 +414,7 @@ a {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 308, style.scss */
+/* line 343, style.scss */
 .sec-services-pricing .price .table-price {
   width: 100%;
   padding: 8px 12px;
@@ -356,11 +422,11 @@ a {
   margin-bottom: 20px;
   border-color: #ffffff;
 }
-/* line 315, style.scss */
+/* line 350, style.scss */
 .sec-services-pricing .price .table-price tr td {
   padding: 4px 10px;
 }
-/* line 320, style.scss */
+/* line 355, style.scss */
 .sec-services-pricing .price a {
   width: 85%;
   height: 35px;
@@ -377,12 +443,12 @@ a {
   color: #fff;
 }
 
-/* line 339, style.scss */
+/* line 374, style.scss */
 sup {
   font-size: 0.65em;
 }
 
-/* line 343, style.scss */
+/* line 378, style.scss */
 .sec-footer {
   margin-top: 70px;
   height: 250px;
@@ -391,12 +457,18 @@ sup {
   justify-content: center;
   align-items: center;
 }
-/* line 350, style.scss */
+@media screen and (max-width: 767px) {
+  /* line 378, style.scss */
+  .sec-footer {
+    text-align: center;
+  }
+}
+/* line 388, style.scss */
 .sec-footer p {
   font-size: 1.5em;
 }
 
-/* line 355, style.scss */
+/* line 393, style.scss */
 .sec-nav-footer {
   background-color: #081218;
   height: 100px;
@@ -404,33 +476,33 @@ sup {
   justify-content: space-around;
   align-items: center;
 }
-/* line 361, style.scss */
+/* line 399, style.scss */
 .sec-nav-footer p {
   font-size: 0.75em;
 }
-/* line 365, style.scss */
+/* line 403, style.scss */
 .sec-nav-footer #nav-footer a {
   font-size: 0.8em;
   margin: 4px;
 }
 @media screen and (max-width: 991px) {
-  /* line 355, style.scss */
+  /* line 393, style.scss */
   .sec-nav-footer {
     flex-direction: column;
     justify-content: center;
   }
 }
 
-/* line 375, style.scss */
+/* line 413, style.scss */
 #site-footer {
   color: white;
 }
-/* line 377, style.scss */
+/* line 415, style.scss */
 #site-footer a {
   color: white;
 }
 
-/* line 383, style.scss */
+/* line 421, style.scss */
 span {
   color: blue;
 }
