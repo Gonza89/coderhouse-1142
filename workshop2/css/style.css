@@ -1,0 +1,139 @@
+/* line 1, style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 4, style.scss */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 10, style.scss */
+.header {
+  border-color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 17, style.scss */
+.menu ul {
+  display: flex;
+  flex-direction: space-around;
+}
+/* line 20, style.scss */
+.menu ul .op-menu {
+  padding: 0px 5px;
+}
+
+/* line 25, style.scss */
+header {
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 35, style.scss */
+.image-header {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+/* line 38, style.scss */
+.image-header h1 {
+  font-size: 75px;
+  padding: 30px 0;
+  margin: 0px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* line 45, style.scss */
+.image-header h2 {
+  font-size: 40px;
+  padding: 30px 0;
+  margin: 0px;
+  text-transform: capitalize;
+}
+/* line 51, style.scss */
+.image-header .button {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #fed136;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/*SERVICES*/
+/*PORTFOLIO*/
+/* line 67, style.scss */
+#portfolio {
+  background-color: #eee;
+}
+
+/* line 70, style.scss */
+br {
+  clear: both;
+}
+
+/* line 75, style.scss */
+.timeline li {
+  position: relative;
+  clear: both;
+}
+/* line 78, style.scss */
+.timeline li .timeline-image {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  left: 41%;
+  background-color: #fed136;
+  border-radius: 50%;
+  border: 5px solid #eee;
+}
+/* line 86, style.scss */
+.timeline li .timeline-image h4 {
+  text-align: center;
+  margin-top: 45px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+/* line 95, style.scss */
+.timeline li .timeline-panel-right {
+  padding: 10px 20px 100px 20px;
+  text-align: right;
+  width: 40%;
+  margin: 0;
+  float: left;
+}
+/* line 102, style.scss */
+.timeline li .timeline-panel-left {
+  padding: 10px 20px 100px 20px;
+  text-align: left;
+  width: 40%;
+  position: relative;
+  left: 60%;
+  float: left;
+}
+
+/*TEAM*/
+/* line 114, style.scss */
+#team {
+  background-color: #eee;
+}
+
+/* line 119, style.scss */
+.team-member {
+  text-align: center;
+}
+
+/*BRANDS*/
+/*CONTACT*/
