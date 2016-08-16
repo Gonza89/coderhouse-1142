@@ -1,34 +1,46 @@
-/* line 1, style.scss */
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-/* line 4, style.scss */
+body {
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif; }
+
 ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
-/* line 10, style.scss */
+a {
+  text-decoration: none;
+  color: #fff; }
+  a:link {
+    text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; }
+
 .header {
   border-color: #000;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
+  background-color: #001;
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
+  .header .logo {
+    color: #fed136;
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    text-transform: capitalize;
+    padding: 20px 10px; }
 
-/* line 17, style.scss */
 .menu ul {
   display: flex;
-  flex-direction: space-around;
-}
-/* line 20, style.scss */
-.menu ul .op-menu {
-  padding: 0px 5px;
-}
+  flex-direction: space-around; }
+  .menu ul .op-menu {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 5px 15px;
+    text-transform: uppercase; }
 
-/* line 25, style.scss */
 header {
   background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
@@ -36,104 +48,181 @@ header {
   background-position: center center;
   background-size: cover;
   text-align: center;
-  color: #ffffff;
-}
+  color: #fff; }
 
-/* line 35, style.scss */
 .image-header {
-  padding-top: 80px;
-  padding-bottom: 100px;
-}
-/* line 38, style.scss */
-.image-header h1 {
-  font-size: 75px;
-  padding: 30px 0;
-  margin: 0px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-/* line 45, style.scss */
-.image-header h2 {
-  font-size: 40px;
-  padding: 30px 0;
-  margin: 0px;
-  text-transform: capitalize;
-}
-/* line 51, style.scss */
-.image-header .button {
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #fed136;
-  border-radius: 5px;
-  padding: 15px 25px;
-  font-size: 17px;
-  font-weight: 700;
-}
+  padding-top: 180px;
+  padding-bottom: 180px; }
+  .image-header h1 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 75px;
+    padding: 30px 0;
+    margin: 0px;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .image-header h2 {
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    padding: 30px 0;
+    margin: 0px;
+    text-transform: uppercase; }
+  .image-header .button {
+    margin: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #fed136;
+    border-radius: 5px;
+    padding: 20px 40px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700; }
 
 /*SERVICES*/
+#services {
+  padding: 100px 0; }
+  #services #header-services h2 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 20px; }
+  #services #header-services h3 {
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #777; }
+  #services #body-services {
+    padding: 60px 0; }
+    #services #body-services .icon .circle {
+      color: #fed136; }
+    #services #body-services h4 {
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: capitalize;
+      font-weight: 600;
+      padding: 10px 0px; }
+    #services #body-services p {
+      color: #777; }
+
 /*PORTFOLIO*/
-/* line 67, style.scss */
 #portfolio {
   background-color: #eee;
-}
+  padding: 140px 0; }
+  #portfolio #header-portfolio {
+    padding-bottom: 80px; }
+    #portfolio #header-portfolio h2 {
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: uppercase;
+      font-size: 40px;
+      font-weight: 700;
+      padding-bottom: 20px; }
+    #portfolio #header-portfolio h3 {
+      font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-style: italic;
+      font-size: 15px;
+      color: #777; }
 
-/* line 70, style.scss */
+.description-portfolio {
+  background-color: #fff;
+  padding: 25px 0; }
+  .description-portfolio h4 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: capitalize;
+    padding: 5px 0;
+    font-weight: 700; }
+  .description-portfolio p {
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: #777; }
+
+.cont-img {
+  margin: 10px 0px; }
+
+/*ABOUT*/
+#about {
+  padding-top: 140px;
+  padding-bottom: 250px; }
+  #about #header-about h2 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 20px; }
+  #about #header-about h3 {
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #777; }
+
 br {
-  clear: both;
-}
+  clear: both; }
 
-/* line 75, style.scss */
-.timeline li {
-  position: relative;
-  clear: both;
-}
-/* line 78, style.scss */
-.timeline li .timeline-image {
-  width: 170px;
-  height: 170px;
-  position: absolute;
-  left: 41%;
-  background-color: #fed136;
-  border-radius: 50%;
-  border: 5px solid #eee;
-}
-/* line 86, style.scss */
-.timeline li .timeline-image h4 {
-  text-align: center;
-  margin-top: 45px;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 22px;
-  font-weight: 600;
-}
-/* line 95, style.scss */
-.timeline li .timeline-panel-right {
-  padding: 10px 20px 100px 20px;
-  text-align: right;
-  width: 40%;
-  margin: 0;
-  float: left;
-}
-/* line 102, style.scss */
-.timeline li .timeline-panel-left {
-  padding: 10px 20px 100px 20px;
-  text-align: left;
-  width: 40%;
-  position: relative;
-  left: 60%;
-  float: left;
-}
+.cont-timeline {
+  padding: 40px 0; }
+  .cont-timeline .timeline li {
+    position: relative;
+    clear: both; }
+    .cont-timeline .timeline li .timeline-image {
+      width: 140px;
+      height: 140px;
+      position: absolute;
+      left: 42%;
+      background-color: #fed136;
+      border-radius: 50%;
+      border: 5px solid #eee; }
+      .cont-timeline .timeline li .timeline-image h4 {
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align: center;
+        margin-top: 32px;
+        margin-left: 5px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px; }
+    .cont-timeline .timeline li .timeline-panel-right {
+      padding: 10px 20px 100px 20px;
+      text-align: right;
+      width: 40%;
+      margin: 0;
+      float: left; }
+      .cont-timeline .timeline li .timeline-panel-right h4 {
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align: right;
+        margin-top: 5px;
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 600; }
+      .cont-timeline .timeline li .timeline-panel-right p {
+        padding-top: 10px; }
+    .cont-timeline .timeline li .timeline-panel-left {
+      padding: 10px 20px 100px 20px;
+      text-align: left;
+      width: 40%;
+      position: relative;
+      left: 60%;
+      float: left; }
+      .cont-timeline .timeline li .timeline-panel-left h4 {
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align: left;
+        margin-top: 5px;
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 600; }
+      .cont-timeline .timeline li .timeline-panel-left p {
+        padding-top: 10px; }
 
 /*TEAM*/
-/* line 114, style.scss */
 #team {
   background-color: #eee;
-}
+  padding: 140px 0; }
 
-/* line 119, style.scss */
 .team-member {
-  text-align: center;
-}
+  text-align: center; }
 
 /*BRANDS*/
 /*CONTACT*/
+
+/*# sourceMappingURL=style.css.map */

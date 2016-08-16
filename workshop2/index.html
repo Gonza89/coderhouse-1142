@@ -3,7 +3,8 @@
 <head>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto+Slab|Montserrat|Droid+Serif' rel='stylesheet' type='text/css'>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agency Workshop</title>
@@ -16,17 +17,17 @@
         </div>
         <nav class="menu">
           <ul>
-            <li class="op-menu">services</li>
-            <li class="op-menu">portfolio</li>
-            <li class="op-menu">about</li>
-            <li class="op-menu">team</li>
-            <li class="op-menu">contact</li>
+            <li class="op-menu"><a href="#services">services</a></li>
+            <li class="op-menu"><a href="#portfolio">portfolio</a></li>
+            <li class="op-menu"><a href="#about">about</a></li>
+            <li class="op-menu"><a href="#team">team</a></li>
+            <li class="op-menu"><a href="#contact">contact</a></li>
           </ul>
         </nav>
       </div>
     <div class="container">
       <div class="image-header">
-        <h2>welcome to our studio</h2>
+        <h2>welcome to our studio!</h2>
         <h1>it's nice to meet you</h1>
         <a href="#" class="btn button">tell me more</a>
       </div>
@@ -35,24 +36,33 @@
   <section id="services">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 text-center" id="header-services">
           <h2>services</h2>
           <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
         </div>
       </div>
-      <div class="row text-center">
+      <div class="row text-center" id="body-services">
         <div class="col-md-4">
-          <span>icono</span>
+          <span class="fa-stack fa-4x icon">
+            <i class="fa fa-circle fa-stack-2x circle" aria-hidden="true"></i>
+            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse" aria-hidden="true"></i>
+          </span>
           <h4>e-commerce</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur quam, voluptatem minima ea rem facilis.</p>
         </div>
         <div class="col-md-4">
-          <span>icono</span>
+          <span class="fa-stack fa-4x icon">
+            <i class="fa fa-circle fa-stack-2x circle" aria-hidden="true"></i>
+            <i class="fa fa-laptop fa-stack-1x fa-inverse" aria-hidden="true"></i>
+          </span>
           <h4>responsive design</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur quam, voluptatem minima ea rem facilis.</p>
         </div>
         <div class="col-md-4">
-          <span>icono</span>
+          <span class="fa-stack fa-4x icon">
+            <i class="fa fa-circle fa-stack-2x circle" aria-hidden="true"></i>
+            <i class="fa fa-lock fa-stack-1x fa-inverse" aria-hidden="true"></i>
+          </span>
           <h4>web security</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur quam, voluptatem minima ea rem facilis.</p>
         </div>
@@ -62,48 +72,48 @@
   <section id="portfolio">
     <div class="container">
       <div class="row text-center">
-        <div class="col-md-12">
+        <div class="col-md-12" id="header-portfolio">
           <h2>portfolio</h2>
           <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
         </div>
       </div>
       <div class="row text-center">
-        <div class="col-md-4">
+        <div class="col-md-4 cont-img">
           <a href="#"><img src="img/portfolio/roundicons.png" alt="" class="img-responsive"></a>
           <div class="description-portfolio">
             <h4>round icons</h4>
             <p>graphic design</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 cont-img">
           <a href="#"><img src="img/portfolio/startup-framework.png" alt="" class="img-responsive"></a>
           <div class="description-portfolio">
             <h4>startup framework</h4>
             <p>website design</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 cont-img">
           <a href="#"><img src="img/portfolio/treehouse.png" alt="" class="img-responsive"></a>
           <div class="description-portfolio">
             <h4>treehouse</h4>
             <p>website designe</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 cont-img">
           <a href="#"><img src="img/portfolio/golden.png" alt="" class="img-responsive"></a>
           <div class="description-portfolio">
             <h4>golden</h4>
             <p>website designe</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 cont-img">
           <a href="#"><img src="img/portfolio/escape.png" alt="" class="img-responsive"></a>
           <div class="description-portfolio">
             <h4>escape</h4>
             <p>website designe</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 cont-img">
           <a href="#"><img src="img/portfolio/dreams.png" alt="" class="img-responsive"></a>
           <div class="description-portfolio">
             <h4>dreams</h4>
@@ -115,13 +125,13 @@
   </section>
   <section id="about">
     <div class="container">
-      <div class="row text-center">
+      <div class="row text-center" id="header-about">
         <div class="col-md-12">
           <h2>about</h2>
           <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
         </div>
       </div>
-      <div class="row">
+      <div class="row cont-timeline">
         <div class="col-md-12">
           <ul class="timeline">
             <li>
