@@ -144,7 +144,7 @@ header {
 /*ABOUT*/
 #about {
   padding-top: 140px;
-  padding-bottom: 250px; }
+  padding-bottom: 100px; }
   #about #header-about h2 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: uppercase;
@@ -161,59 +161,62 @@ br {
   clear: both; }
 
 #body-about {
-  padding: 40px 0; }
-  #body-about .timeline li {
-    position: relative;
-    clear: both; }
-    #body-about .timeline li .timeline-image {
-      width: 140px;
-      height: 140px;
-      position: absolute;
-      left: 42%;
-      background-color: #fed136;
-      border-radius: 50%;
-      border: 5px solid #eee; }
-      #body-about .timeline li .timeline-image h4 {
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        text-align: center;
-        margin-top: 32px;
-        margin-left: 5px;
-        text-transform: uppercase;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 25px; }
-    #body-about .timeline li .timeline-panel-right {
-      padding: 10px 20px 100px 20px;
-      text-align: right;
-      width: 40%;
-      margin: 0;
-      float: left; }
-      #body-about .timeline li .timeline-panel-right h4 {
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding: 50px 0; }
+  #body-about .timeline {
+    position: relative; }
+    #body-about .timeline li {
+      clear: both;
+      overflow: hidden;
+      min-height: 140px; }
+      #body-about .timeline li .timeline-image {
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        left: 42%;
+        background-color: #fed136;
+        border-radius: 50%;
+        border: 5px solid #eee; }
+        #body-about .timeline li .timeline-image h4 {
+          font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+          text-align: center;
+          margin-top: 32px;
+          margin-left: 5px;
+          text-transform: uppercase;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 25px; }
+      #body-about .timeline li .timeline-panel-right {
+        padding: 10px 20px 100px 20px;
         text-align: right;
-        margin-top: 5px;
-        text-transform: capitalize;
-        font-size: 18px;
-        font-weight: 600; }
-      #body-about .timeline li .timeline-panel-right p {
-        padding-top: 10px; }
-    #body-about .timeline li .timeline-panel-left {
-      padding: 10px 20px 100px 20px;
-      text-align: left;
-      width: 40%;
-      position: relative;
-      left: 60%;
-      float: left; }
-      #body-about .timeline li .timeline-panel-left h4 {
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        width: 40%;
+        margin: 0;
+        float: left; }
+        #body-about .timeline li .timeline-panel-right h4 {
+          font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+          text-align: right;
+          margin-top: 5px;
+          text-transform: capitalize;
+          font-size: 18px;
+          font-weight: 600; }
+        #body-about .timeline li .timeline-panel-right p {
+          padding-top: 10px; }
+      #body-about .timeline li .timeline-panel-left {
+        padding: 10px 20px 100px 20px;
         text-align: left;
-        margin-top: 5px;
-        text-transform: capitalize;
-        font-size: 18px;
-        font-weight: 600; }
-      #body-about .timeline li .timeline-panel-left p {
-        padding-top: 10px; }
+        width: 40%;
+        position: relative;
+        left: 60%;
+        float: left; }
+        #body-about .timeline li .timeline-panel-left h4 {
+          font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+          text-align: left;
+          margin-top: 5px;
+          text-transform: capitalize;
+          font-size: 18px;
+          font-weight: 600; }
+        #body-about .timeline li .timeline-panel-left p {
+          padding-top: 10px; }
 
 /*TEAM*/
 #team {
@@ -268,5 +271,72 @@ br {
   margin: 40px auto; }
 
 /*CONTACT*/
+#contact {
+  background-color: #222;
+  background-image: url(../img/map-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0; }
+
+#header-contact {
+  padding: 40px 0; }
+  #header-contact h2 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: #fff; }
+  #header-contact h3 {
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #777; }
+
+#body-contact {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; }
+  #body-contact .form-group {
+    margin-bottom: 25px; }
+    #body-contact .form-group .input-model {
+      width: 100%;
+      padding: 15px 15px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      border: none; }
+    #body-contact .form-group textarea {
+      min-height: 200px; }
+
+button {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #fff;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  background-color: #fed136;
+  border-radius: 4px;
+  border-color: #fed136;
+  border: none; }
+
+/*FOOTER*/
+#footer {
+  padding: 20px 0px;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; }
+  #footer span {
+    line-height: 40px; }
+  #footer ul {
+    padding: 5px; }
+    #footer ul li a {
+      display: block;
+      border-radius: 100%;
+      background-color: #000;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      padding: 6px; }
+  #footer .link {
+    text-transform: capitalize;
+    color: #fed136;
+    padding: 0px 10px;
+    line-height: 40px; }
 
 /*# sourceMappingURL=style.css.map */
