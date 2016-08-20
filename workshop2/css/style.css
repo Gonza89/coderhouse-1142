@@ -18,28 +18,37 @@ a {
 h1, h2, h3, h4, h5, h6, p {
   margin: 0; }
 
-.header {
-  border-color: #000;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #001;
-  position: fixed;
-  width: 100%;
-  z-index: 1; }
-  .header .logo {
+.navbar-custom {
+  background-color: #333;
+  padding: 15px 0;
+  border: none; }
+  .navbar-custom .navbar-toggle {
+    color: #fff;
+    background-color: #fed136;
+    border: none; }
+    .navbar-custom .navbar-toggle:hover {
+      background-color: #fed136; }
+    .navbar-custom .navbar-toggle:focus {
+      background-color: #fed136; }
+  .navbar-custom .navbar-collapse {
+    border-color: rgba(255, 255, 255, 0.02); }
+  .navbar-custom .navbar-brand {
     color: #fed136;
+    font-size: 30px;
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    text-transform: capitalize;
-    padding: 20px 10px; }
-
-.menu ul {
-  display: flex;
-  flex-direction: space-around; }
-  .menu ul .op-menu {
+    text-transform: capitalize; }
+    .navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus {
+      color: #fed136; }
+  .navbar-custom #navbar-bootstrap ul li a {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    padding: 5px 15px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px; }
+    .navbar-custom #navbar-bootstrap ul li a:hover {
+      color: #fed136; }
+    .navbar-custom #navbar-bootstrap ul li a:focus {
+      background-color: #fed136; }
 
 header {
   background-image: url(../img/header-bg.jpg);
@@ -80,7 +89,7 @@ header {
 
 /*SERVICES*/
 #services {
-  padding: 100px 0; }
+  padding: 140px 0; }
   #services #header-services h2 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: uppercase;
