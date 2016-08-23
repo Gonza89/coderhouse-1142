@@ -16,7 +16,8 @@ a {
     text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6, p {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 .navbar-custom {
   background-color: #333;
@@ -26,9 +27,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #fff;
     background-color: #fed136;
     border: none; }
-    .navbar-custom .navbar-toggle:hover {
-      background-color: #fed136; }
-    .navbar-custom .navbar-toggle:focus {
+    .navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
       background-color: #fed136; }
   .navbar-custom .navbar-collapse {
     border-color: rgba(255, 255, 255, 0.02); }
@@ -47,8 +46,6 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 1px; }
     .navbar-custom #navbar-bootstrap ul li a:hover {
       color: #fed136; }
-    .navbar-custom #navbar-bootstrap ul li a:focus {
-      background-color: #fed136; }
 
 header {
   background-image: url(../img/header-bg.jpg);
@@ -154,6 +151,9 @@ header {
 #about {
   padding-top: 140px;
   padding-bottom: 100px; }
+  @media screen and (max-width: 992px) {
+    #about {
+      padding-bottom: 40px; } }
   #about #header-about h2 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: uppercase;
@@ -181,10 +181,21 @@ br {
         width: 140px;
         height: 140px;
         position: absolute;
-        left: 42%;
+        left: 43%;
         background-color: #fed136;
         border-radius: 50%;
         border: 5px solid #eee; }
+        @media screen and (max-width: 1200px) {
+          #body-about .timeline li .timeline-image {
+            width: 120px;
+            height: 120px; } }
+        @media screen and (max-width: 992px) {
+          #body-about .timeline li .timeline-image {
+            width: 100px;
+            height: 100px; } }
+        @media screen and (max-width: 768px) {
+          #body-about .timeline li .timeline-image {
+            left: 0%; } }
         #body-about .timeline li .timeline-image h4 {
           font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
           text-align: center;
@@ -195,12 +206,27 @@ br {
           font-size: 18px;
           font-weight: 600;
           line-height: 25px; }
+          @media screen and (max-width: 1200px) {
+            #body-about .timeline li .timeline-image h4 {
+              line-height: 24px;
+              margin-top: 20px; } }
+          @media screen and (max-width: 992px) {
+            #body-about .timeline li .timeline-image h4 {
+              font-size: 14px;
+              line-height: 18px;
+              margin-top: 20px; } }
       #body-about .timeline li .timeline-panel-right {
         padding: 10px 20px 100px 20px;
         text-align: right;
-        width: 40%;
+        width: 42%;
         margin: 0;
         float: left; }
+        @media screen and (max-width: 768px) {
+          #body-about .timeline li .timeline-panel-right {
+            text-align: left;
+            padding-bottom: 80px;
+            padding-left: 130px;
+            width: 100%; } }
         #body-about .timeline li .timeline-panel-right h4 {
           font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
           text-align: right;
@@ -208,15 +234,28 @@ br {
           text-transform: capitalize;
           font-size: 18px;
           font-weight: 600; }
+          @media screen and (max-width: 768px) {
+            #body-about .timeline li .timeline-panel-right h4 {
+              text-align: left; } }
         #body-about .timeline li .timeline-panel-right p {
           padding-top: 10px; }
       #body-about .timeline li .timeline-panel-left {
-        padding: 10px 20px 100px 20px;
+        padding: 10px 20px 100px 0;
         text-align: left;
-        width: 40%;
         position: relative;
-        left: 60%;
+        left: 58%;
+        width: 42%;
         float: left; }
+        @media screen and (max-width: 992px) {
+          #body-about .timeline li .timeline-panel-left {
+            left: 60%; } }
+        @media screen and (max-width: 768px) {
+          #body-about .timeline li .timeline-panel-left {
+            padding-bottom: 80px;
+            padding-left: 130px;
+            text-align: left;
+            width: 100%;
+            left: 0%; } }
         #body-about .timeline li .timeline-panel-left h4 {
           font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
           text-align: left;

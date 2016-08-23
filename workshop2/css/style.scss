@@ -21,6 +21,7 @@ a{
 
 h1,h2,h3,h4,h5,h6,p{
 	margin:0;
+	padding:0;
 }
 
 .navbar-custom{
@@ -31,10 +32,7 @@ h1,h2,h3,h4,h5,h6,p{
 		color:#fff;
 		background-color:#fed136;
 		border:none;
-		&:hover{
-			background-color:#fed136;
-		}
-		&:focus{
+		&:hover, &:focus{
 			background-color:#fed136;
 		}
 	}
@@ -62,10 +60,6 @@ h1,h2,h3,h4,h5,h6,p{
 					&:hover{
 						color:#fed136;
 					}
-					&:focus{
-						background-color:#fed136;
-					}
-
 				}
 			}
 		}
@@ -204,6 +198,9 @@ header{
 #about{
 	padding-top: 140px;
 	padding-bottom: 100px;
+	@media screen and (max-width:992px){
+		padding-bottom: 40px;
+	}
 	#header-about{
 		h2{
 		font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -237,10 +234,21 @@ br{
 				width: 140px;
 				height: 140px;
 				position:absolute;
-				left:42%;
+				left:43%;
 				background-color:#fed136;
 				border-radius:50%;
 				border: 5px solid #eee;
+				@media screen and (max-width:1200px) {
+					width: 120px;
+					height: 120px;
+				}
+				@media screen and (max-width:992px) {
+					width: 100px;
+					height: 100px;
+				}
+				@media screen and (max-width:768px) {
+					left: 0%;
+				}
 				h4{
 					font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 					text-align:center;
@@ -251,14 +259,30 @@ br{
 					font-size: 18px;
 					font-weight: 600;
 					line-height: 25px;
+					@media screen and (max-width:1200px) {
+						line-height: 24px;
+						margin-top: 20px;
+					}
+					@media screen and (max-width:992px) {
+						font-size:14px;
+						line-height: 18px;
+						margin-top: 20px;
+
+					}
 				}
 			}
 			.timeline-panel-right{
 				padding: 10px 20px 100px 20px;
 	    		text-align: right;
-	     		width: 40%;
+	     		width: 42%;
 	    		margin: 0;
 	    		float: left;
+	    		@media screen and (max-width:768px) {
+	    			text-align: left;
+	    			padding-bottom: 80px;
+	    			padding-left: 130px;
+	    			width: 100%;
+	    		}
 				h4{
 					font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 					text-align:right;
@@ -266,18 +290,32 @@ br{
 					text-transform: capitalize;
 					font-size: 18px;
 					font-weight: 600;
+					@media screen and (max-width:768px) {
+		    			text-align: left;
+		    		}
 				}
+
 				p{
 					padding-top: 10px;
 				}
 	    	}
 			.timeline-panel-left{
-				padding: 10px 20px 100px 20px;
+				padding: 10px 20px 100px 0;
 			  	text-align: left;
-			  	width: 40%;
 			  	position: relative;
-			  	left: 60%;
+			  	left: 58%;
+			  	width: 42%;
 			  	float: left;
+			  	@media screen and (max-width:992px) {
+			  		left: 60%;
+			  	}
+			  	@media screen and (max-width:768px) {
+		    		padding-bottom:80px;
+		    		padding-left: 130px;
+		    		text-align: left;
+		     		width: 100%;
+		    		left: 0%;
+		    	}
 				h4{
 					font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 					text-align:left;
