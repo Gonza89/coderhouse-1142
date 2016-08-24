@@ -2,7 +2,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif; }
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+  min-width: 320px; }
 
 ul {
   list-style: none;
@@ -18,6 +19,25 @@ a {
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0; }
+
+h2 {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 20px; }
+
+h3 {
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  color: #777; }
+
+h4 {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 10px 0px; }
 
 .navbar-custom {
   background-color: #333;
@@ -38,6 +58,9 @@ h1, h2, h3, h4, h5, h6, p {
     text-transform: capitalize; }
     .navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus {
       color: #fed136; }
+    @media screen and (max-width: 323px) {
+      .navbar-custom .navbar-brand {
+        font-size: 22px; } }
   .navbar-custom #navbar-bootstrap ul li a {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: uppercase;
@@ -87,26 +110,10 @@ header {
 /*SERVICES*/
 #services {
   padding: 140px 0; }
-  #services #header-services h2 {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 700;
-    padding-bottom: 20px; }
-  #services #header-services h3 {
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-style: italic;
-    font-size: 15px;
-    color: #777; }
   #services #body-services {
     padding: 60px 0; }
     #services #body-services .icon .circle {
       color: #fed136; }
-    #services #body-services h4 {
-      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-      text-transform: capitalize;
-      font-weight: 600;
-      padding: 10px 0px; }
     #services #body-services p {
       color: #777; }
 
@@ -116,24 +123,11 @@ header {
   padding: 140px 0; }
   #portfolio #header-portfolio {
     padding-bottom: 80px; }
-    #portfolio #header-portfolio h2 {
-      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-      text-transform: uppercase;
-      font-size: 40px;
-      font-weight: 700;
-      padding-bottom: 20px; }
-    #portfolio #header-portfolio h3 {
-      font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-style: italic;
-      font-size: 15px;
-      color: #777; }
 
 .description-portfolio {
   background-color: #fff;
   padding: 25px 0; }
   .description-portfolio h4 {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform: capitalize;
     padding: 5px 0;
     font-weight: 700; }
   .description-portfolio p {
@@ -154,17 +148,6 @@ header {
   @media screen and (max-width: 992px) {
     #about {
       padding-bottom: 40px; } }
-  #about #header-about h2 {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 700;
-    padding-bottom: 20px; }
-  #about #header-about h3 {
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-style: italic;
-    font-size: 15px;
-    color: #777; }
 
 br {
   clear: both; }
@@ -197,24 +180,22 @@ br {
           #body-about .timeline li .timeline-image {
             left: 0%; } }
         #body-about .timeline li .timeline-image h4 {
-          font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
           text-align: center;
-          margin-top: 32px;
-          margin-left: 5px;
+          padding-top: 32px;
+          padding-left: 5px;
           text-transform: uppercase;
           color: #fff;
           font-size: 18px;
-          font-weight: 600;
           line-height: 25px; }
           @media screen and (max-width: 1200px) {
             #body-about .timeline li .timeline-image h4 {
               line-height: 24px;
-              margin-top: 20px; } }
+              padding-top: 20px; } }
           @media screen and (max-width: 992px) {
             #body-about .timeline li .timeline-image h4 {
               font-size: 14px;
               line-height: 18px;
-              margin-top: 20px; } }
+              padding-top: 20px; } }
       #body-about .timeline li .timeline-panel-right {
         padding: 10px 20px 100px 20px;
         text-align: right;
@@ -228,12 +209,10 @@ br {
             padding-left: 130px;
             width: 100%; } }
         #body-about .timeline li .timeline-panel-right h4 {
-          font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
           text-align: right;
           margin-top: 5px;
           text-transform: capitalize;
-          font-size: 18px;
-          font-weight: 600; }
+          font-size: 18px; }
           @media screen and (max-width: 768px) {
             #body-about .timeline li .timeline-panel-right h4 {
               text-align: left; } }
@@ -257,12 +236,10 @@ br {
             width: 100%;
             left: 0%; } }
         #body-about .timeline li .timeline-panel-left h4 {
-          font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
           text-align: left;
           margin-top: 5px;
           text-transform: capitalize;
-          font-size: 18px;
-          font-weight: 600; }
+          font-size: 18px; }
         #body-about .timeline li .timeline-panel-left p {
           padding-top: 10px; }
 
@@ -270,17 +247,6 @@ br {
 #team {
   background-color: #eee;
   padding: 140px 0; }
-  #team #header-team h2 {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 700;
-    padding-bottom: 20px; }
-  #team #header-team h3 {
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-style: italic;
-    font-size: 15px;
-    color: #777; }
 
 #body-team {
   padding: 80px 0; }
@@ -291,10 +257,7 @@ br {
       margin: 0 auto;
       border: 5px solid #fff; }
     #body-team .team-member h4 {
-      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-      padding-top: 20px;
-      text-transform: capitalize;
-      font-weight: 600; }
+      padding-top: 20px; }
     #body-team .team-member p {
       color: #777;
       text-transform: capitalize;
@@ -329,17 +292,7 @@ br {
 #header-contact {
   padding: 40px 0; }
   #header-contact h2 {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 700;
-    padding-bottom: 20px;
     color: #fff; }
-  #header-contact h3 {
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-style: italic;
-    font-size: 15px;
-    color: #777; }
 
 #body-contact {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; }
