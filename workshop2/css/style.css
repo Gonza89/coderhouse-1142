@@ -338,7 +338,7 @@ br {
         background-color: #eee;
         color: #000;
         transition: all 1s ease-out; }
-      #footer ul li a:hover:before {
+      #footer ul li a:before {
         background-color: #eee;
         color: #000;
         transition: all 1s ease-out; }
